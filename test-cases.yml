@@ -35,7 +35,6 @@
     Браузер Google Chrome, последняя версия
     Открыта страница браузера с url https://codebattle.hexlet.io
   test-data: |
-    Телефон = "+71234567890"
     e-mail = "Anna@anna.ru"
     Логин = "hodor1"
     Пароль = "123456"
@@ -47,5 +46,26 @@
     - 5 Подтвердить пароль пользователя
     - 6 Нажать кнопку "Регистрация"
   expected-result: |
-    Отображается баннер "Пользователь зарегистрирован" и выполнено перенаправление на url https://codebattle.hexlet.io/#lobby
+    Выполнено перенаправление на url https://codebattle.hexlet.io/#lobby
+  postrequisites: |
+    Выйти из учетной записи пользователя
     
+- summary: |
+    Успешная авторизация пользователя
+  requirement: |
+    Должна быть возможность авторизации пользователя
+  prerequisites: |
+    Браузер Google Chrome, последняя версия
+    Открыта страница браузера с url https://codebattle.hexlet.io
+  test-data: |
+    e-mail = "Anna@anna.ru"
+    Пароль = "123456"
+  steps:
+    - 1 Открыть форму регистрации пользователя
+    - 2 Ввести почту пользователя
+    - 3 Ввести пароль пользователя
+    - 4 Нажать кнопку "Подтвердить"
+  expected-result: |
+    Выполнено перенаправление на url https://codebattle.hexlet.io/#lobby
+    
+  
