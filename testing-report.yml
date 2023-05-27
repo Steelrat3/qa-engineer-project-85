@@ -75,10 +75,6 @@
   status: pass  
   
 - summary: |
-    Соответствие страницы сайта формату SPA
-  status: pass  
-  
-- summary: |
     Проверка поддержки расширения шифрования SSL/TLS в протоколе передачи данных HTTP 
   status: pass   
   
