@@ -551,10 +551,10 @@
     Браузер2 = "Mozilla Firefox, последняя версия"
     Nickname1 = "hodor1"
     e-mail1 = "Anna@anna.ru"
-    Пароль1 = "123456"
+    Password1 = "123456"
     Nickname2 = "hodor2"
     e-mail2 = "Anna1@anna.ru"
-    Пароль2 = "123456"
+    Password2 = "123456"
     Game type = "With a bot"
     Choose task = "rect_area"
     Actions = "Show"
@@ -583,7 +583,7 @@
   test-data: |
     Nickname = "hodor1"
     e-mail = "Anna@anna.ru"
-    Пароль = "123456"
+    Password = "123456"
     Game type = "With a bot"
     Choose task = "rect_area"
     Язык программирования= "NodeJS"
@@ -616,7 +616,7 @@
   test-data: |
     Nickname = "hodor1"
     e-mail = "Anna@anna.ru"
-    Пароль = "123456"
+    Password = "123456"
     Game type = "With a bot"
     Choose task = "rect_area"
     Язык программирования= "NodeJS"
@@ -651,7 +651,7 @@
   test-data: |
     Nickname = "hodor1"
     e-mail = "Anna@anna.ru"
-    Пароль = "123456"
+    Password = "123456"
     Game type = "With a bot"
     Choose task = "rect_area"
     Язык программирования1 = "NodeJS" 
@@ -674,10 +674,12 @@
     Завершенная игра должна быть доступна в записи и редактор кода выглядит как проигрыватель
   prerequisites: |
     Браузер Google Chrome, последняя версия
+    Пользователь неавторизован
     Открыта страница авторизации пользователя https://codebattle.hexlet.io/session/new?locale=en&next=%2F
   test-data: |
+    Nickname = "hodor1"
     e-mail = "Anna@anna.ru"
-    Пароль = "123456"
+    Password = "123456"
     Game type = "With a bot"
     Choose task = "rect_area"
     Язык программирования= "NodeJS"
@@ -708,10 +710,12 @@
     Протокол передачи данных HTTP должен поддерживать расширения шифрования SSL/TLS 
   prerequisites: |
     Браузер Google Chrome, последняя версия
+    Пользователь неавторизован
     Открыта главная страница https://codebattle.hexlet.io/
   test-data: |
+    Nickname = "hodor1"
     e-mail = "Anna@anna.ru"
-    Пароль = "123456"
+    Password = "123456"
   steps: 
     - 1 В адресной строке браузера изменить ссылку заменив  "https" на "http" и перейти по измененной ссылке
     - 2 Убедиться, что значение "https" не изменилось на "http"
@@ -726,12 +730,14 @@
     Размеры кнопок, отступы и расположение форм не должны меняться при переключении  языка текста с русского на английский и обратно
   prerequisites: |
     Браузер Google Chrome, последняя версия
-    Открыта страница браузера с url https://codebattle.hexlet.io
+    Пользователь неавторизован
+    Открыта страница https://codebattle.hexlet.io
   test-data: |
     Размер1 = 375 пикселей по ширине (типовый экран мобильного)
     Размер2 = 1600 пикселей по ширине (типовый экран монитора)
+    Nickname = "hodor1"
     e-mail = "Anna@anna.ru"
-    Пароль = "123456"
+    Password = "123456"
     Game type = "With a bot"
     Choose task = "rect_area"
     Язык программирования= "NodeJS"
@@ -756,12 +762,15 @@
     Размеры кнопок, расположение элементов в формах и дизайн должны сохраняться при переключении  языка текста с русского на английский и обратно
   prerequisites: |
     Браузер Google Chrome, последняя версия
+    Пользователь авторизован с тестовыми данными
     В браузере открыты две одинаковые вкладки URL = https://codebattle.hexlet.io/games/135387
     В каждой вкладке каталога установлена эмуляция экрана монитора с типовым разрешением экрана = 1600 пикселей по ширине
     В первой вкладке установлен язык "English"
     Во второй вкладке установлен язык "Русский"
   test-data: |
-    -
+    Nickname = "hodor1"
+    e-mail = "Anna@anna.ru"
+    Password = "123456"
   steps: 
     - 1 Сравнить размеры и расположение кнопок между вкладками с русским и английским языком
     - 2 Убедиться в корректности перевода
@@ -776,8 +785,9 @@
     При отсутствии соединения с сетью интернет должно отображаться стандартное текстовое сообщение браузера об отсутствии подключения
   prerequisites: |
     Браузер Google Chrome, последняя версия
-    Открыта страница браузера с url https://codebattle.hexlet.io
-    Установлена эмуляция скорости интернета = Offline
+    Пользователь неавторизован
+    Открыта страница браузера https://codebattle.hexlet.io
+    Установлена эмуляция скорости передачи данных интернета = Offline
   test-data: |
     -
   steps:
