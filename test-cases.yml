@@ -640,8 +640,7 @@
     Оба игрока могут менять язык программирования в процессе игры
   prerequisites: |
     Браузер Google Chrome, последняя версия
-    Открыта страница авторизации пользователя https://codebattle.hexlet.io/session/new?locale=en&next=%2F
-   
+    Открыта страница авторизации пользователя https://codebattle.hexlet.io/session/new?locale=en&next=%2F   
   test-data: |
     e-mail = "Anna@anna.ru"
     Пароль = "123456"
